@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Survey Form</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style type="text/css">
+	    body{
+	    	background-color:#14A21F ;
+	    }
+		h1{
+			text-align: center;
+			font-size: 40px;
+			background-color:#14A21F ;
+			height: 50px;
+			font-family: helvetica,sans-serif; 
+		}
+		form{
+			display: inline-block;
+
+		}
+		#container{
+			background-color: white;
+			margin-right: 50px;
+			margin-left: 50px;
+			padding: 15px 50px 30px 50px;
+			margin-bottom: 50px;
+			text-align: center;
+			border-radius: 5px;
+		}	
+		#description{
+			font-size: 20px;
+			font-weight: bold;
+			text-align: center;
+		}
+	    #survey-form{
+	    	font-size: 25px; 
+	    }
+	    #name{
+	    	background-color: #CACFD2;
+	    	padding: 5px;
+	    	font-size: 15px;
+	    	width: 200px;
+	    }
+	    #email{
+	    	background-color: #CACFD2;
+	    	padding: 5px;
+	    	font-size: 15px;
+	    	width: 200px;
+	    }
+	    #number{
+	    	background-color: #CACFD2;
+	    	padding: 5px;
+	    	font-size: 15px;
+	    	width: 200px;
+	    }
+	    #dropdown{
+	    	background-color: #CACFD2;
+	    	font-size: 15px;
+	    	width: 200px;
+	    	padding: 5px;
+	    }
+	    #submit{
+	        width: 150px;
+	        height: 40px;
+	        background-color: #CACFD2;
+	        padding-top: 5px;
+	        font-size: 20px;
+	        font-family: sans-serif;
+	        padding-bottom: 5px;
+	        border-radius: 8px;
+	        font-weight: bold;
+        }
+        #submit:hover{
+        	opacity: .8;
+        	background-color: #14A21F;
+        }
+        #comments{
+	        background-color: #CACFD2;
+	        font-size: 14px;
+        }
+        #checkbox{
+        	line-height: 40px;
+        }
+
+
+
+label {
+font-family: Georgia, "Times New Roman", Times, serif;
+font-size: 18px;
+color: #333;
+height: 20px;
+width: 200px;
+margin-top: 10px;
+margin-left: 10px;
+text-align: right;
+clear: both;
+}
+
+input {
+height: 20px;
+width: 300px;
+border: 1px solid #000;
+margin-top: 10px;
+float: right;
+clear: both;
+}
+select{
+height: 30px;
+width: 300px;
+border: 1px solid #000;
+margin-top: 10px;
+float: right;
+}
+
+	</style>
+</head>
+<body>
+	<h1 id="title">Survey Form</h1>
+	<div id="container">
+		<p id="description">Please submit your feedback to improve Hostel facility</p>
+
+		<form id="survey-form">
+			
+			<label for="name" id="name-label">Name:</label>
+			<input type="text" name="name" id="name" placeholder="Enter your name" required=""><br><br>
+			<label for="email" id="email-label">E-mail:</label>
+			<input type="email" name="mail" id="email" placeholder="Enter your e-mail" required=""><br><br>
+			<label for="number" id="number-label">Room no:</label>
+			<input type="number" name="number" id="number" placeholder="Enter your room number" minlength="10"><br><br>
+			
+
+			<label for="dropdown">Course:</label>
+			<select id="dropdown" name=""> 
+				<option>Diploma</option>
+				<option>B.tech</option>
+				<option>M.tech</option>
+				<option>ph.D</option>
+			</select><br><br>
+
+			
+            <label>Are you satisfied with current hostel facility?</label><br>
+			<label><input type="radio" name="w" value="1">Excellent</label><br>
+			<label><input type="radio" name="w" value="2">Good</label><br>
+			<label><input type="radio" name="w" value="3">Its ok</label><br>
+			<label><input type="radio" name="w" value="4">Bad</label><br><br>
+
+            <div id="checkbox">
+			<label>What improvements should be done?</label><br>
+			<label><input type="checkbox" name="c" value="1">Cleanliness</label><br>
+			<label><input type="checkbox" name="c" value="2">Wi-fi facility</label><br>
+			<label><input type="checkbox" name="c" value="3">Mess food</label><br>
+			<label><input type="checkbox" name="c" value="4">Safety & Security</label><br>
+			<label><input type="checkbox" name="c" value="5">Maintainance</label><br>
+			<label><input type="checkbox" name="c" value="6">Power back-up</label><br>
+			<label><input type="checkbox" name="c" value="7">Drinking water</label><br><br>
+			</div>
+
+			<textarea rows="6" cols="50" id="comments" placeholder="Write here for any comments or suggestions..."></textarea><br><br>
+
+			<button type="submit" id="submit">Submit</button>
+
+			
+		</form>
+
+	</div>
+
+
+</body>
+</html>
